@@ -47,9 +47,9 @@ All needed datasets are given in the data folder. This pipeline is specificly im
 3. identity (_identity_) : The identity is the percentage of exact position match (from 0 to 100). By default : 80%.
 4. maximum all (_max\_all_) : Number of best hits (based on e-value) in order to save restrained results.
 5. maximum sequences (_max\_seq_) : Number of best hits (based on e-value) by query sequence.
-6. number of threads (_nb\_thread_) : By default :20.
+6. number of threads (_nb\_thread_) : By default : 20.
 
-`perl ./homdistrib.pl --database --fasta -evalue --cov --identity --max_all --max_seq --nb_thread`
+`perl ./homdistrib.pl --database --fasta --evalue --cov --identity --max_all --max_seq --nb_thread`
 
 ## OUTPUTS
 Three folders will be created at the root of the project :
@@ -57,7 +57,7 @@ Three folders will be created at the root of the project :
 - **bl** : It contains all previous blast outputs which are unique for given database and multifasta file of query sequences.
 - **res** : It contains all filtered results. Text files names are encoded with applied parameters. Text outputs are always saved in two versions : a detailled one with all alignment characteristics and a synthetic one which only contains sequences identifiers.
 
-In this **res** folder, a **plot** folder is created to stock associated maps.
+In the **res** folder, **plot** folder stocks maps and graphs.
  
 ## REFERENCES
 Bivand, R. (2016). Lewin-Koh N. maptools: Tools for reading and handling spatial objects. R package version 0.8–27. 2013.
