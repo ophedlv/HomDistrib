@@ -70,7 +70,7 @@ for(i in 1:dim(d_long)[1]) {
 #--------------------------------------------
 
 # Read environmental data
-env <- read.csv(paste(path_root,"/data/envdata20170215.tsv",sep=""), sep = "\t", stringsAsFactor = F) # Modify
+env <- read.csv("/users/dasilva/pr/data/envdata20170215.tsv", sep = "\t", stringsAsFactor = F) # Modify
 env <- env[-seq(585,593),1:3] # remove unknown stations
 
 # Formatting data
